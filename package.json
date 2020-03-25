@@ -1,0 +1,20 @@
+{
+  "name": "vigil",
+  "version": "1.0.0",
+  "description": "navigator",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bootstrap": "^4.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "wow"
+  },
+  "keywords": [
+    "bootstrap","navigator"
+  ],
+  "author": "cangyunye@163.com",
+  "license": "ISC"
+}

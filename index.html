@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>测试组导航页</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!--提示框-->
+  <script>$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});</script>
+  <style>
+    body{ background: url(./images/bg.png) repeat;}
+    .w1200 { width: 1200px; margin: 0 auto; }
+    .jumbotron { background:url(./images/ir1.jpg) repeat;}
+      /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+    .card {background:url(./images/lightbg.jpg)}
+
+    </style>
+
+</head>
+<body>
+ 
+<!-- #头部 -->
+<div class="jumbotron text-center">
+  <h2  class="float-md-left">善始善终</h2>
+</div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-8 offset-md-4" >
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item "><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <h2>看这里<strong>超快</strong></h2>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link text-success" data-toggle="collapse" href="#collapseOne">
+                  测试工具
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse" data-parent="#accordion" >
+                <div class="card-body" >
+                   <!-- #网页型的展示，后续加入类似投票提交的功能-->
+                  <a href="#" data-toggle="tooltip" title="等等，以后会加视图展示那个excel的，并且做成投票型checkbox控件!" >CheckList</a><br>
+                  <a href="#">索引检查</a><br>
+                  <a href="#">周常升级</a><br>
+                  <a href="#">在线升级</a><br>
+                  <a href="#">自动化工厂</a><br>
+                  <a href="#">2019工程</a><br>
+                  <a href="#">2020工程</a><br>
+                  <a href="#">联调环境问题</a><br>
+                  <a href="#">日志分析工具</a><br>
+                  <a href="#">用户数据生成工具</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link text-info" data-toggle="collapse" href="#collapseTwo">
+                日常频道
+              </a>
+              </div>
+              <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                  <a href="#">云龙</a><br>
+                  <a href="#">测试管理平台</a><br>
+                  <!-- #用表格的形式展示-->
+                  <a href="#">迭代视图</a><br>
+                  <a href="#">驻地会议室</a><br>
+                  <a href="#">视频会议室</a><br>
+                  <!-- #基线修改-->
+                  <a href="#">基线修改</a><br>
+                  <a href="#">责任田划分</a><br>
+                  <!-- #历代DTS统计，入mysql-->
+                  <a href="#">DTS统计</a><br>
+                  <a href="#">3ms论坛</a><br>
+                  <a href="#">机器信息</a><br>
+                  <a href="#">菜单联调</a><br>
+                  <!-- #产品查询那些东西-->
+                  <a href="#">参数查询语句</a><br>
+                  <!-- #常写的数据输入输出-->
+                  <a href="#">FPA常用输出查询</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link text-warning" data-toggle="collapse" href="#collapseThree">
+                一键安装
+              </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  
+                  <a href="#">ORACLE</a><br>
+                  <a href="#">TIMESTEN</a><br>
+                  <a href="#">FASTORE</a><br>
+                  <a href="#">MYSQL</a><br>
+                  <a href="#">PYTHON</a><br>
+                  <a href="#">GOLANG</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link text-danger" data-toggle="collapse" href="#collapseFour">
+                  业务文档
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <img class="img-fluid" src="images/portfolio6.jpg" alt="">
+                  <!-- #设计从svn list提取几个目录的数据，定时更新，写入mysql-->
+                  <a href="#">svn文档快搜</a><br>
+                  <a href="#">AI机器人</a><br>
+                  <a href="#" class="text-info">概要设计</a><br>
+                  <a href="#" class="text-warning">规格说明</a><br>
+                  <a href="#" class="text-success">SRS</a><br>
+                  <a href="#" class="text-muted">协议文档</a><br>
+                  <a href="#" class="text-primary">业务总结</a><br>
+                  <a href="#" class="text-primary">数据模型</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                  软件仓库
+                </a>
+              </div>
+              <div id="collapseFive" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-info">还找软件？<br></p>
+                  <img class="img-fluid" src="images/portfolio7.jpg" alt="">
+                  <a href="#">svn软件库</a><br>
+                  <a href="#">TOOLCLOUD</a><br>
+                  <a href="#" data-toggle="tooltip" title="和编程相关的软件!" >REPOTOOL</a><br>
+                  <a href="#"><strong>python</strong>-源</a><br>
+                  <a href="#"><strong>zypper</strong>-源</a><br>
+                  <a href="#"><strong>其他</strong>-源</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link text-dark" data-toggle="collapse" href="#collapseSix">
+                  学海无涯苦坐舟
+                </a>
+              </div>
+              <div id="collapseSix" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="text-info">别看了，你会学？<br></p>
+                  <img class="img-fluid" src="images/learnaghost.jpg" alt="">
+                  <a href="#"><strong>shell</strong>入门</a><br>
+                  <a href="#"><strong>python-jupyter</strong>修行场</a><br>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="小朋友，你是否有很多？？？" ><strong>python-cookbook</strong></a><br>
+                  <a href="https://leetcode-cn.com" data-toggle="tooltip" data-placement="top" title="懵逼树下懵逼果，懵逼树下没有我" ><strong>leetcode</strong>算法挑战</a><br>
+                  <a href="#">加薪才看的内容</a><br>
+                  <a href="#">不到考试不看的内容</a><br>
+                  <a href="#">大图书馆</a><br>
+                  <a href="https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html">菜鸟教程-bootstrap4</a><br>
+                  <a href="https://www.w3school.com.cn/html5/index.asp">W3School-HTML5</a><br>
+                  <a href="https://docs.python.org/zh-cn/3/">Python-教程</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <h2>日常运作</h2>
+        		<!--input type="text" 表示是一个输入框-->
+		<!--input type="submit" 表示一个提交按钮 相当于一个开关告诉form要发送数据-->
+		<form action="https://www.baidu.com/s">
+      <input type="text" name="wd"/>
+      <input type="submit"  value="百度"/>
+    </form>
+    <form action="https://www.google.com/search?">
+      <input type="text" name="q"/>
+      <input type="submit"  value="google"/>
+    </form>
+
+
+        <div class="alert alert-success alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>云龙</strong> 测试<a href="#" class="alert-link">操作</a>平台。
+        </div>
+        <div class="alert alert-info alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>版本测试</strong> 请注意<a href="#" class="alert-link">这个</a>信息。
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>会议室</strong><a href="#" class="alert-link"> 预定</a>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>质量回溯</strong> <a href="#" class="alert-link"> 痛</a>定思痛。
+        </div>
+        <div class="alert alert-primary alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>版本迭代信息</strong> 本版本的时间线
+        </div>
+        <div class="alert alert-secondary alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>联调菜单</strong> 包括基本菜单和联调相关信息
+        </div>
+        <div class="alert alert-dark alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>软件仓库</strong> 够你装的了
+        </div>
+        <div class="alert alert-light alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>图书馆</strong> 学不完的，就当参考书了
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="table-responsive">
+          <h2>DTS月度统计</h2>          
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>jobnumber</th>
+                <th>month</th>
+                <th>count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>hwx403</td>
+                <td>03</td>
+                <td>11</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>开发区，让我想想</h3>
+          <button type="button" class="btn btn-dark">黑色</button>
+          <a href="#" class="btn btn-info" role="button">链接按钮</a>
+          <button type="button" class="btn btn-outline-warning">警告</button>
+        </div>
+        <div>
+          <h2>留言板</h2>
+          <p>先别留言，没用，我还不会搞</p>
+          <form>
+            <div class="form-group">
+              <label for="comment">评论:</label>
+              <textarea class="form-control" rows="5" id="comment">留言人：
+事件：</textarea>
+              <button type="button" class="btn btn-info">提交</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- #尾部 -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" >
+      <div class="card">
+        <address>
+          <strong>This Company, Inc.</strong><br>
+          flat cloud 163<br>
+          GuangZhou, 411100<br>
+          <abbr title="Phone">Phone:</abbr>xxx24100202 .<br>
+          <strong>Full Name</strong><br>
+          <a href="mailto:#">cangyunye@163.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="col-md-4" >        
+      <h3>别点这里，没用，先挂着</h3>     
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item "><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 " > 
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">关于我们</h4>
+          <p class="card-text">现在没空，先不做.</p>
+          <a href="#" class="card-link">Team</a>
+          <a href="#" class="card-link">Log</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+</body>
+</html>
